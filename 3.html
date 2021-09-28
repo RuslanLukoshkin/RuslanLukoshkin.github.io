@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style3.css">
+		
+		
+    </head>
+    <body>
+	
+	<header>
+		<div id="centr">
+			<img id="logotip" src="image1.png">
+			<div id="stnm">Супер название</div> 
+		</div>
+	</header>
+	
+        <nav>
+            <ul id="menu">
+                <li><a href="http://example.com">Основная информация</a></li>
+                <li><a href="http://example.com">Новости</a></li>
+                <li><a href="http://example.com">Фотогалерея</a></li>
+                <li><a href="http://example.com">Список контактов</a></li>
+            </ul>
+        </nav>
+		
+	<ol id="cvet">
+		
+       <li><a href = "http://example.com">абсолютная гиперссылка на главную страницу сайта example.com</a> </li>
+       <li><a href = "https://example.com">абсолютная гиперссылка на главную сайта example.com в протоколе https</a> </li>
+       <li><a href = "ftp://example.com/jija.txt">ссылка на файл на сервере FTP без авторизации</a> </li>
+       <li><a href = "ftp://test_user:pass123@example.com/jija.txt">ссылка на файл на сервере FTP с авторизацией</a> </li>
+       <li><a href = "https://tavalik.ru/ssylka-na-ftp-server#p2"> ссылка на фрагмент страницы некоторого сайта</a> </li>
+	   <li><a href="#superpowers">ссылка на фрагмент текущей страницы</a></li>
+	   <li><a href = "https://ru.wikipedia.org/wiki/Теннис?pravila=rule&istoria=history"> ссылка с двумя параметрами в URL </a> </li>
+	   <li>
+            <ul>
+                <li><a href="./index.html" title="Переход на основную страницу сайта">Главная страница</a></li>
+                <li><a href="./news.html" title="Узнай о новых разработках первым!">Лента новостей</a></li>
+                <li><a href="./about.html" title="Здесь мы расскажем тебе нашу историю">Это мы!</a></li>
+            </ul>
+        </li>
+		<li> <a = "http://example.com">ссылка без href</a> </li>
+		<li><a href="">ссылка с пустым href</a></li>
+		<li><a href="http://example.com/" rel="nofollow">ссылка по которой запрещен переход поисковикам</a></li>	
+		<li><a href="http://example.com/" rel="noindex"> запрещенная ссылка для индексации поисковиками</a></li>
+		<li><p>в решении задач я использую в основном <a href="http:exmaple.com">этот ресурс</a></p></li>
+		<li><a href="http://example.com/"><img src="image.jpg" width="300" height="230"></a></li>
+		<li><img src="image.jpg" width="300" height="230" usemap="#kartinka_cvetochka"></li>
+            <map name="kartinka_cvetochka">
+                <area shape="rect" coords="0,0,60,230" href="http://example.com/">
+				<area shape="circle" coords="150,115,60" href="http://example.com/">
+            </map>
+		<li><a href="about"> относительная ссылка на страницу в текущем каталоге</a></li>
+		<li><a href="about/chto-to.html"> относительная ссылка на страницу в каталоге about</a></li>
+		<li><a href=" ../chto-to.html">относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+		<li><a href="../../chto-to.html">относительная ссылка на страницу в каталоге двумя уровнями выше </a></li>
+		<li><a href="/home"> сокращенная ссылка на главную </a></li> 
+		<li><a href="./"> сокращенная ссылка на внутреннюю </a></li>
+		
+		
+		<table>
+                <tbody>
+                    <tr>
+                        <th>Столб 1</th>
+                        <th>Столб 2</th>
+                        <th>Столб 3</th>
+                    </tr>
+                    <tr class="nechet">
+					
+                        <td>1-1</td>
+                        <td>2-1</td>
+						<td>3-1</td>
+                    </tr>
+
+                    <tr class="chet">
+                        <td>2-1</td>
+                        <td>2-2</td>
+                        <td>2-3</td>
+                    </tr>
+
+                    <tr class="nechet">
+						<td rowspan = "2" class="ce">3-1 и 4-1</td>
+                        <td>3-2</td>
+                        <td>3-3</td>
+                    </tr>
+
+                    <tr class="chet">
+                        <td>4-2</td>
+                        <td>4-3</td>
+                    </tr>
+
+                    <tr class="nechet">
+						
+                        <td colspan="2" class="ce">5-1 и 5-2</td>
+                        <td>5-3</td>
+                    </tr>
+                </tbody>
+            </table><br/>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div id="formochka">
+		<form action="/"
+		method="POST">
+        <label>
+        Имя:<br/>
+		<input name="imya" value="Я"/>
+        </label><br/>
+        <label>
+		Email:<br/>
+		<input name="pochta" value="superpochtabegemot@gmail.ru" type="email"/>
+		</label><br>
+		<label>
+		Дата рождения:<br/>
+		<input name="data" value="1986-10-10" type="date"/> 
+		</label><br/>
+		Пол:<br/>
+		<label> 
+		<input type="radio" checked="checked" name="pol" value="Boy"/>
+		Мужской
+		</label><br/>
+        <label> 
+        <input type="radio" checked="checked" name="pol" value="Girl"/>
+		Женский
+		</label><br/>
+        Количетсво конечностей:<br/>
+        <label>
+        <input type="radio" checked="checked" name="chislokon" value="4"/>
+        4
+        </label><br/>          
+        <label>
+        <input type="radio" checked="checked" name="chislokon" value="3"/>
+		3
+        </label><br/>  
+        <label>
+        <input type="radio" checked="checked" name="chislokon" value="2"/>
+        2
+		</label><br/>  
+        <label>
+        <input type="radio" checked="checked" name="chislokon" value="1"/>
+		1
+        </label><br/>      
+        <label>
+		Сверхспособности:<br/>
+		<select name="superpowers">                
+		<option value="nochzr">Ночное зрение</option>
+        <option value="lazglaz">Лазарный луч из глаз</option>
+		<option value="telepat">Телепатия</option>
+		</select>
+		</label><br/>
+        <label>
+        Расскажите о себе <br/>
+		<textarea name="biography">Я - вселенная</textarea>
+		</label><br/>
+        <label>
+        С правилами ознакомлен
+		<input type="checkbox" checked="checked" name="ponyal"/>
+		</label> <br>
+        <input type="submit" value="Отправить" id="send-button"/>
+        </form>
+		</div>
+		</ol>
+		
+		<footer>
+			&#xa9; Руслан Лукошкин 2021
+		</footer>
+		
+    </body>
+	
+</html>

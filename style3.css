@@ -1,0 +1,124 @@
+body 
+{	
+	margin 0;	
+}
+main
+{
+max-width:960px;
+margin:0 auto;
+
+
+}
+#centr
+{
+	max-width:960px;
+	margin:0 auto;
+}
+header
+{
+	height: 150px;
+	background-color: #F0FFF0;
+}
+
+#header-container 
+{
+  display: flex;
+}
+
+
+#logotip
+{	
+	float: left;
+	margin: 20px;
+}
+#stnm
+{
+	font-size: 250%;
+	position: relative;
+	top: 10px;
+}
+#menu
+{	
+	background-color:#FFFFDD;
+	text-align: center;	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: auto;
+	align-content:flex-start;
+}
+
+main
+{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+#menu li
+{
+	display: inline-block;
+}
+#menu a
+{
+	display: block;
+  padding: 25px 25px;
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table
+{
+	order: 0;	
+}
+
+#formochka
+{
+	order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  #menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  main, nav, #centr {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  table
+  {
+    width: 350px;
+    height: 160px;
+  }
+
+
+.ce {
+    background-color: green;
+}
+
+.nechet
+{
+	background-color: purple;
+}
+.chet
+{
+	background-color: white;
+}
+
+footer
+{
+	background-color: #F0FFF0;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#cvet
+{
+	background-color:#CCFFFF;
+}
