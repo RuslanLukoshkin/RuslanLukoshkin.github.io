@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <link rel="stylesheet" href="5.css">
+</head>
+
+<body>
+  <div id="main">
+	<div id="zag">
+		Топливо гонщиков
+	</div>
+
+    <div id="calf">
+      <form>
+        <div id="cenaprod" class="korobka">
+          <label>Цена за литр:</label>
+          <input type="text" name="cenprod" placeholder="50 рублей">
+        </div>
+        <div id="product-amount" class="korobka">
+          <label>Количество литров:</label>
+          <input type="text" name="prkol" placeholder="5 литров">
+        </div>
+       <div id="result" class="korobka"></div>
+        <div>
+          <input type="button" value="Посчитать" id="calknop" onclick="calculate();">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="5sc.js" defer></script>
+</body>
+
+</html>
