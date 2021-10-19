@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <link rel="stylesheet" href="6.css">
+</head>
+<body>
+  <div id="main">
+  <div id="calform">
+  <form>
+  <div id="prodcut-price" class="korobka">
+  <div class="labkor">
+  <label>Цена:</label>
+  </div>
+  <div id="result"></div>
+  </div>
+          <div id="kolprod" class="korobka">
+          <div class="labkor"><label>Количество:</label></div>
+          <input type="text" name="kolprod" placeholder="1" class="incon">
+          </div>
+          <div class="korobka">
+          <div class="labkor"><label>Выбери напиток:</label></div>
+          <select name="productType" class="incon">
+          <option value="1">Какао</option>
+          <option value="2">Кофе</option>
+          <option value="3">Чай</option>
+          </select>
+          </div>
+          <div class="korobka" id="prspec">
+          <div class="labkor"><label>Выбери температуру</label></div>
+          <div class="formpr">
+          <label>Холодный</label>
+          <input class="option-radios" name="radioOptions" type="radio" checked="checked" value="option1">
+          </div>
+          <div class="formpr">
+          <label>Тёплый</label>
+          <input class="option-radios" name="radioOptions" type="radio" value="option2">
+          </div>
+          <div class="formpr">
+          <label>Горячий</label>
+          <input class="option-radios" name="radioOptions" type="radio" value="option3">
+          </div>
+          </div>
+          <div class="korobka" id="chekboxspec">
+          <div class="labkor"><label>Что добавим?</label></div>
+          <div class="formpr">
+          <label>Сахар</label>
+          <input class="option-checkboxes" name="checkOptionsA" type="checkbox" checked="checked" value="option1">
+          </div>
+          <div class="formpr">
+          <label>Зефирки</label>
+          <input class="option-checkboxes" name="checkOptionsB" type="checkbox" value="option2">
+          </div>
+          <div class="formpr">
+          <label>Сироп "карамель"</label>
+          <input class="option-checkboxes" name="checkOptionsC" type="checkbox" value="option3">
+          </div>
+          </div>
+          <div>
+          <input type="button" value="Рассчитать" id="calknop" onclick="">
+          </div>
+          </form>
+    </div>
+  </div>
+  <script src="6sc.js" defer></script>
+</body>
+
+</html>

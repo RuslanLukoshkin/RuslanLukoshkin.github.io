@@ -1,0 +1,55 @@
+#main {
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body
+{
+	  background-color: yellow;
+}
+#calform {
+  background-color: #FFCC99;
+  text-align: center;
+  padding: 69px;
+  border-radius: 180px;
+}
+
+.korobka{
+  justify-content: flex-start;
+  flex-direction: column;
+   margin-bottom: 10px;
+  display: flex;
+}
+
+.korobka label, #calknop {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#calknop{
+  padding: 22px 22px;
+  font-weight: 700;
+}
+
+.formpr {
+  margin: 5px 5px;
+}
+
+.labkor {
+  margin-right: 10px;
+}
+
+.incon{
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .korobka {
+    flex-direction: row;
+  }
+
+  .incon {
+    width: 30%;
+  }
+
+}
