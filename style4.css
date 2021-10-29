@@ -34,18 +34,3 @@ body, #menu {
 	text-align: center;
   }
   
-  
-  #formochka {
-	order: 0;
-  }
-  
-  #table-ex {
-	order: 1;
-  }
-  
-  @media screen and (min-width: 768px) {
-	#formochka { order: 1; }
-	#table-ex { order: 0; }
-  }
-  
-  
