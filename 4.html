@@ -28,16 +28,16 @@
   <div class="container mt-2">
     <nav class="navbar navbar-inverse navbar-expand-sm" style="justify-content: center">
       <ul id="menu" class="navbar-nav">
-        <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Основная информация</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Фото</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Команда</a></li>
+        <li class="nav-item col-sm-12 col-md-3"><a href="" class="nav-link">Контакты</a></li>
+        <li class="nav-item col-sm-12 col-md-3"><a href="" class="nav-link">Основная информация</a></li>
+        <li class="nav-item col-sm-12 col-md-3"><a href="" class="nav-link">Фото</a></li>
+        <li class="nav-item col-sm-12 col-md-3"><a href="" class="nav-link">Команда</a></li>
       </ul>
     </nav>
   </div>
 
   <div class="container">
-    <main>
+    <main class="d-flex flex-column">
       <ol>
         <li><a href="http://exmaple.com">абсолютную гиперссылку на главную страницу сайта example.com;</a></li>
         <li><a href="https://example.com">абсолютную на главную сайта example.com в протоколе https;</a></li>
@@ -78,7 +78,7 @@
 			<area shape="circle" coords="150,115,60" href="http://example.com/">
 		</map>
 
-		<div class="table-responsive-md" id="table-ex">
+		<div class="table-responsive-md order-1 order-sm-0" id="table-ex">
 			<table class="table table-striped table-bordered">
 				<tbody>
 					<tr>
@@ -118,87 +118,89 @@
 		</div>
 		<br/>
 
-      <form id="formochka">
-        <div class="form-group row">
-          <label class="col-1 col-form-label">Имя:</label>
-          <div class="col-sm-4 col-md-11">
-            <input class="form-control" name="user-name" placeholder="Я" />
-          </div>
-        </div>
+		<div class="container order-0 order-sm-1">
+		  <form id="formochka">
+			<div class="form-group row">
+			  <label class="col-1 col-form-label">Имя:</label>
+			  <div class="col-sm-4 col-md-11">
+				<input class="form-control" name="user-name" placeholder="Я" />
+			  </div>
+			</div>
 
-        <div class="form-group row">
-          <label class="col-1 col-form-label">Email:</label>
-          <div class="col-sm-4 col-md-11">
-            <input class="form-control" name="field-email" placeholder="superpochtabegemot@gmail.ru" type="email" />
-          </div>
-        </div>
+			<div class="form-group row">
+			  <label class="col-1 col-form-label">Email:</label>
+			  <div class="col-sm-4 col-md-11">
+				<input class="form-control" name="field-email" placeholder="superpochtabegemot@gmail.ru" type="email" />
+			  </div>
+			</div>
 
-        <div class="form-group row">
-          <label class="col-xs-1 col-md-3 col-form-label">Дата рождения:</label>
-          <div class="col-xs-1 col-md-3">
-            <input class="form-control" name="field-date" value="1986-10-10" type="date" />
-          </div>
-        </div>
+			<div class="form-group row">
+			  <label class="col-xs-1 col-md-3 col-form-label">Дата рождения:</label>
+			  <div class="col-xs-1 col-md-3">
+				<input class="form-control" name="field-date" value="1986-10-10" type="date" />
+			  </div>
+			</div>
 
-        <label>Пол:</label>
+			<label>Пол:</label>
 
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="field-gender" value="Male" />
-          <label class="form-check-label">Мужской</label>
-        </div>
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="field-gender" value="Male" />
+			  <label class="form-check-label">Мужской</label>
+			</div>
 
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="field-gender" value="Female" />
-          <label class="form-check-label">Женский</label>
-        </div>
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="field-gender" value="Female" />
+			  <label class="form-check-label">Женский</label>
+			</div>
 
-        <label>Количетсво конечностей:</label>
+			<label>Количетсво конечностей:</label>
 
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="number-of-limbs" value="4" />
-          <label class="form-check-label">4</label>
-        </div>
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="number-of-limbs" value="4" />
+			  <label class="form-check-label">4</label>
+			</div>
 
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="number-of-limbs" value="3" />
-          <label class="form-check-label">3</label>
-        </div>
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="number-of-limbs" value="3" />
+			  <label class="form-check-label">3</label>
+			</div>
 
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="number-of-limbs" value="2" />
-          <label class="form-check-label">2</label>
-        </div>
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="number-of-limbs" value="2" />
+			  <label class="form-check-label">2</label>
+			</div>
 
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="number-of-limbs" value="1" />
-          <label class="form-check-label">1</label>
-        </div>
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="number-of-limbs" value="1" />
+			  <label class="form-check-label">1</label>
+			</div>
 
 
-        <div class="form-group row">
-          <label class="col-2 col-form-label mr-4">Сверхспособности:</label>
-          <div class="col-xs-2 col-md-3">
-            <select class="custom-select" name="superpowers" multiple>
-              <option value="nochzr">Ночное зрение</option>
-              <option value="lazglaz">Лазарный луч из глаз</option>
-              <option value="telepat">Телепатия</option>
-            </select>
-          </div>
-        </div>
+			<div class="form-group row">
+			  <label class="col-2 col-form-label mr-4">Сверхспособности:</label>
+			  <div class="col-xs-2 col-md-3">
+				<select class="custom-select" name="superpowers" multiple>
+				  <option value="nochzr">Ночное зрение</option>
+				  <option value="lazglaz">Лазарный луч из глаз</option>
+				  <option value="telepat">Телепатия</option>
+				</select>
+			  </div>
+			</div>
 
-        <div class="form-group">
-          <label>Расскажите о себе</label>
-          <textarea class="form-control" name="biography">Я - вселенная</textarea>
-        </div>
+			<div class="form-group">
+			  <label>Расскажите о себе</label>
+			  <textarea class="form-control" name="biography">Я - вселенная</textarea>
+			</div>
 
-        <div class="form-check">
-			<label class="form-check-label">С правилами ознакомлен</label>
-			<input class="form-check-input" id="rules-agree" type="checkbox" checked="checked" name="check-alice" />
-        </div>
+			<div class="form-check">
+				<label class="form-check-label">С правилами ознакомлен</label>
+				<input class="form-check-input" id="rules-agree" type="checkbox" checked="checked" name="check-alice" />
+			</div>
 
-        <br>
-        <input type="submit" class="btn btn-primary" value="Отправить" id="send-button" />
+			<br>
+			<input type="submit" class="btn btn-primary" value="Отправить" id="send-button" />
       </form>
+	  </div>
     </main>
   </div>
 
